@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  
+  <link href="../Diabetes.css" type="text/css" rel="stylesheet">
+</head>
+<style>
+    #vishwa{
+    
+        background: rgba(0, 128, 0, 0.3);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.hello{
+    text-align: center;
+    position: relative;
+    
+}
+.container1{
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    transition: ease-in;
+    text-shadow: 2px 2px rgba(0,0,0,0.8);
+    
+    color: #FFF;
+}
+.j{
+    font-size: 25px;
+    font-weight: 400;
+    
+}
+.ss{
+    margin: 20px;
+    padding: 20px;
+}
+</style>
+
+<body id="vishwa">
+  
+
+
+  <div class="hello" id="index-banner">
+    <div class="container1">
+      <br><br>
+      <h1 class="header center orange-text">Forest Fire Prevention</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the probability of Forest-Fire Occurence
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="j">
+            <label for="first_name"><b>No of times Pregnent</b></label>
+            <br>
+          <input placeholder="No of times Pregnent" name="NoP" id="first_name" type="text" class="validate">
+        </div>
+        <div class="j">
+
+          <label for="last_name"><b>Plasma glucose concentration </b></label>
+            <br>
+          <input id="last_name" name="Plasma glucose concentration" placeholder="Plasma glucose concentration"  type="text" class="validate">
+
+        </div>
+
+        <div class="j">
+            <label for="_name"><b>Diastolic blood pressure (mm Hg)</b></label>
+            <br>
+          <input id="_name" name="Diastolic blood pressure (mm Hg)" placeholder="Diastolic blood pressure (mm Hg)" type="text" class="validate">
+
+        </div>
+        <div class="j">
+            <label for="_name1"><b>Triceps skinfold thickness (mm)</b></label>
+            <br>
+          <input id="_name1" name="Triceps skinfold thickness (mm)" placeholder="Triceps skinfold thickness (mm)" type="text" class="validate">
+
+        </div>
+        <div class="j">
+            <label for="_name2"><b>2-Hour serum insulin (mu U/ml)</b></label>
+            <br>
+          <input id="_name2" name="2-Hour serum insulin (mu U/ml)" placeholder="2-Hour serum insulin (mu U/ml)" type="text" class="validate">
+
+        </div>
+        <div class="j">
+            <label for="_name3"><b>Body mass index (weight in kg/(height in m)^2)</b></label>
+            <br>
+          <input id="_name3" name="BMI" placeholder="BMI" type="text" class="validate">
+
+        </div>
+        <div class="j">
+            <label for="_name4"><b>Diabetes pedigree function</b></label>
+            <br>
+          <input id="_name4" name="Diabetes pedigree function" placeholder="Diabetes pedigree function" type="text" class="validate">
+
+        </div>
+        <div class="j">
+            <label for="_name5"><b>Age (years)</b></label>
+            <br>
+          <input id="_name5" name="Age (years)" placeholder="Age (years)" type="text" class="validate">
+
+        </div>
+      </div>
+
+      <div class="ss">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange" style="padding:5px 15px;font-size:26px;
+          font-weight:200;">Predict Probability</button>
+      </div>
+    </form>
+      </div>
+
+      <br>{{pred}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+
+ 
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
